@@ -122,7 +122,7 @@ func setupHost(ctx context.Context) (host.Host, *dht.IpfsDHT) {
 	}
 	logrus.Traceln("Generated P2P Security and Transport Configurations.")
 
-	//Hhost listener address
+	//Host listener address
 	muladdr, err := multiaddr.NewMultiaddr("/ip4/0.0.0.0/tcp/0")
 	listen := libp2p.ListenAddrs(muladdr)
 	// Handle any potential error
